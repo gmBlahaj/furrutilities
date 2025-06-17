@@ -1,6 +1,6 @@
 
 
-# furrutilities
+# FurrUtilities
 
 **Tools to download content from furry-related websites**
 
@@ -10,8 +10,8 @@ NodeJS utilities to bulk download images and comics from popular furry art platf
 
 ## Features
 
-* **e621 Downloader:** Search posts by tag, filter out unwanted tags, and download images with concurrency control and progress bars.
-* **Yiffgrabber:** Download comics from yiffer.xyz as PDF or CBZ archives, with optional ZIP compression and detailed metadata support (if working idk).
+* **bluepaw-fetch:** Search posts by tag, filter out unwanted tags, and download images with concurrency control and progress bars.
+* **YifferGrab:** Download comics from yiffer.xyz as PDF or CBZ archives, with optional ZIP compression and detailed metadata support (if working idk).
 
 </br>
 
@@ -30,12 +30,12 @@ npm install
 
 ## Usage
 
-### 1. e621 Downloader
+### 1. bluepaw-fetch
 
 Downloads posts from e621.net filtered by tags.
 
 ```bash
-node e621-downloader.js -t "tag1 tag2" -b "blockedTag1,blockedTag2" -o ./downloads -l 50 -d
+node bluepaw-fetch.js -t "tag1 tag2" -b "blockedTag1,blockedTag2" -o ./downloads -l 50 -d
 ```
 
 
@@ -53,12 +53,12 @@ node e621-downloader.js -t "tag1 tag2" -b "blockedTag1,blockedTag2" -o ./downloa
 ---
 </br>
 
-### 2. Yiffgrabber
+### 2. YifferGrab
 
 Downloads comics from yiffer.xyz and outputs as PDF or CBZ archives.
 
 ```bash
-node yiffgrabber.js <comic-name> [options]
+node yiffergrab.js <comic-name> [options]
 ```
 </br>
 
@@ -78,20 +78,9 @@ node yiffgrabber.js <comic-name> [options]
 **Example:**
 
 ```bash
-node yiffgrabber.js mycomic -f cbz -z -d
+node yiffergrab.js mycomic -f cbz -z -d
 ```
 
-</br>
-
-## Development
-
-Feel free to contribute or modify the tools!
-
-```bash
-npm install
-node e621-downloader.js --help
-node yiffgrabber.js --help
-```
 </br>
 
 ## License
