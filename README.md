@@ -92,6 +92,7 @@ npm install
 node e621-downloader.js --help
 node yiffgrabber.js --help
 ```
+</br>
 
 ## License
 
